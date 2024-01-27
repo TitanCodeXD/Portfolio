@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
 <!-- Biblioteca FontAwesome -->
 <script src="https://kit.fontawesome.com/c834624e2c.js" crossorigin="anonymous"></script>
@@ -22,19 +22,26 @@
   rel="stylesheet"
 />
 
- <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
- <link rel="icon" href="img/portfolio.png">
+<link rel="icon" href="img/portfolio.png">
+
+<meta charset="UTF-8">
+
+<script src = "./app.js"></script>
 <!-- Biblioteca FontAwesome -->
     </head>
 
 
   <body>
-
-<!-- Começando Nav -->
     
+<!-- Começando Nav -->
+    <div class="content content-en">
 <nav id="navbar" class="nav">
   <ul class="nav-list">
+    <li>
+      <button id="language-toggle" onclick="toggleLanguage()"><i class="fa fa-globe fa-lg"></i> Toggle Language</button>
+    </li>
     <li>
       <a href="#welcome-section"><i class="fas fa-user-alt"></i> About</a>
     </li>
@@ -72,6 +79,8 @@
 
 <section id="projects" class="projects-section">
   <h2 class="projects-section-header">These are some of my projects on WEB</h2>
+  <p style = "margin-bottom: 10px;">- Hover over a project to see a description of each one and the tools used -</p>
+
   <div class="projects-grid">
     <a
       href="https://codepen.io/titancodexd/full/zYdxEzz"
@@ -88,7 +97,22 @@
         Tribute Page - Linkin Park
         <span class="code">&#47;&gt;</span>
       </p>
-    </a>
+
+      <div  class="project-description">
+
+        <p>
+          One of my first sites, with only pure HTML and CSS. Mini project via &copy; FreeCodeCamp.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+          </ul>
+        </p>
+      </div>
+      </a>
     
     
     <a
@@ -103,9 +127,27 @@
       />
       <p class="project-title">
         <span class="code">&lt;</span>
-        Games Survey From
+        Games Survey Form
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div class="project-description">
+
+        <p>
+          One of my first form training sites. Mini Project via &copy; FreeCodeCamp.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+          </ul>
+        </p>
+        
+      </div>
+
+      
     </a>
     
     
@@ -124,6 +166,21 @@
         Technology LandPage
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div  class="project-description">
+
+        <p>
+          Simple website simulating a technology product page.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+          </ul>
+        </p>
+      </div>
     </a>
     
     
@@ -139,9 +196,25 @@
       />
       <p class="project-title">
         <span class="code">&lt;</span>
-        CSS Technical Documentation Page
+        CSS Technical Documentation
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div  class="project-description">
+
+        <p>
+          Mini Documentation Page Project via &copy; FreeCodeCamp.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+          </ul>
+        </p>
+      </div>
+
     </a> 
     
     <a
@@ -159,6 +232,27 @@
         Quiz Game with REACT
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div  class="project-description">
+
+        <p>
+          Quiz Game made with React and context.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              * Javascript <i class="fab fa-js"></i>
+            </li>
+            <li>
+              * React <i class="fa-brands fa-react"></i>
+            </li>
+          </ul>
+        </p>
+      </div>
     </a> 
     
     <a
@@ -176,6 +270,29 @@
         Using Weather API with REACT
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div  class="project-description">
+        <p>
+          Website using weather API with React.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              * Javascript <i class="fab fa-js"></i>
+            </li>
+            <li>
+              * React <i class="fa-brands fa-react"></i>
+            </li>
+            <li>
+              * Bootstrap <i class="fa-brands fa-bootstrap"></i>
+            </li>
+          </ul>
+        </p>
+      </div>
     </a> 
     
      <a
@@ -193,6 +310,27 @@
         Secret Word Game with React
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div  class="project-description">
+
+        <p>
+          Quiz game to guess the secret word.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              * Javascript <i class="fab fa-js"></i>
+            </li>
+            <li>
+              * React <i class="fa-brands fa-react"></i>
+            </li>
+          </ul>
+        </p>
+      </div>
     </a> 
     
     <a
@@ -207,9 +345,82 @@
       />
       <p class="project-title">
         <span class="code">&lt;</span>
-        MiniBlog With React and Firebase
+        MiniBlog - React and Firebase
         <span class="code">&#47;&gt;</span>
       </p>
+
+      <div  class="project-description">
+
+        <p>
+          MiniBlog project, with registration, login and the possibility of sharing photos (only via link).
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              * Javascript <i class="fab fa-js"></i>
+            </li>
+            <li>
+              * React <i class="fa-brands fa-react"></i>
+            </li>
+            <li>
+              * Firebase
+            </li>
+          </ul>
+        </p>
+
+      </div>
+
+
+      <a
+      href="https://parallel-two.vercel.app"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://cdn.discordapp.com/attachments/720147957760000036/1200555197735391322/image.png?ex=65c69b28&is=65b42628&hm=e1b21f9a3c73931131c0ed00b4ae15118a552374cb695ac5bdbd3ca985a61301&"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Parallel
+        <span class="code">&#47;&gt;</span>
+      </p>
+      <div class="project-description">
+        <p>
+          Parallel, a project for an instagram-style website, where you have your account, post photos, comment, like, have your profile and so on.
+          <ul>
+            <li>
+              * HTML <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              * CSS <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              * Javascript <i class="fab fa-js"></i>
+            </li>
+            <li>
+              * React <i class="fa-brands fa-react"></i>
+            </li>
+            <li>
+              * Express 
+            </li>
+            <li>
+              * MongoDB Atlas 
+            </li>
+            <li>
+              * Redux 
+            </li>
+            <li>
+              * Amazon AWS S3
+            </li>
+          </ul>
+        </p>
+      </div>
 
   </div>
 
@@ -219,6 +430,7 @@
     target="_blank"
     >Show other projects...<i class="fas fa-chevron-right"></i
   ></a>
+
 </section>
 
 <!-- Fim dos Projetos -->
@@ -234,9 +446,9 @@
   </div>
   <div class="contact-links">
     <a id = "profile-link"
-      href="#"
+      href="https://www.facebook.com/profile.php?id=100004397526684"
       target="_blank"
-      class="btn contact-details contact-fail"
+      class="btn contact-details contact-success"
       ><i class="fab fa-facebook-square"></i> Facebook</a
     >
     
@@ -261,17 +473,17 @@
     <a
       href="https://twitter.com/Wesley_Beatz"
       target="_blank"
-      class="btn contact-details contact-fail"
+      class="btn contact-details contact-success"
       ><i class="fa-brands fa-x-twitter"></i> Twitter</a
     >
     
     
-    <a href="mailto:wesleysantos********@outlook.com" class="btn contact-details contact-fail"
-      ><i class="fas fa-at"></i> Send a mail</a
-    >
+    <a href="mailto:wesleysantos32892653@outlook.com" class="btn contact-details contact-success"
+        ><i class="fas fa-at"></i> Send a mail</a
+      >
     
     
-    <a href="tel:XXX" class="btn contact-details contact-fail"
+    <a href="tel:41998703723" class="btn contact-details contact-fail"
       ><i class="fas fa-mobile-alt"></i> Call me</a
     >
   </div>
@@ -295,7 +507,509 @@
        ><strong>Wesley Roberto dos Santos <i class="fas fa-user-alt"></i> .</strong></a>
   </p>
 </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SITE EM PORTUGUÊS-->
+
+<div class="content content-pt hidden">
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <button id="language-toggle" onclick="toggleLanguage()"><i class="fa fa-globe"></i> Trocar Linguagem</button>
+      </li>
+      <li>
+        <a href="#welcome-section-pt"><i class="fas fa-user-alt"></i> Sobre</a>
+      </li>
+      <li>
+        <a href="#projects-pt"><i class="fas fa-briefcase"></i> Projetos</a>
+      </li>
+      <li>
+        <a href="#contact-pt"><i class="far fa-address-card"></i> Contato</a>
+      </li>    
+    </ul>
+  </nav>
+  
+      
+  <!-- Fim do Nav -->
+  
+    
+  <!-- Começo da Apresentação -->
+  
+      
+  <!-- Seta -->
+  <section id="welcome-section-pt" class="welcome-section">
+    <h1>Oi, sou Wesley</h1>
+    <p>Estudante de Engenharia da Computação</p>
+    
+    <div class="arrow"></div>
+  </section>
+      
+  <!-- Seta -->
+  
+  <!-- Fim da Apresentação -->
+   
+    
+    
+  <!-- Começando Trabalhos -->
+  
+  <section id="projects-pt" class="projects-section">
+    <h2 class="projects-section-header">Alguns dos meus projetos WEB</h2>
+    <p style = "margin-bottom: 10px;">- Passe o mouse em um projeto para ver a descrição de cada um e as ferramentas usadas -</p>
+
+    <div class="projects-grid">
+      <a
+        href="https://codepen.io/titancodexd/full/zYdxEzz"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/774046803996704768/899450675786821632/CimSXqcXyFkAAAAASUVORK5CYII.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Página Tributo - Linkin Park
+          <span class="code">&#47;&gt;</span>
+        </p>
+  
+        <div  class="project-description">
+
+          <p>
+            Um dos meus primeiros sites, tendo somente HTML e CSS puros. Mini projeto via &copy; FreeCodeCamp.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+            </ul>
+          </p>
+        </div>
+          
+        </a>
+      
+      
+      <a
+        href="https://codepen.io/titancodexd/full/wvqaGjV"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/774046803996704768/899456941896630322/unknown.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Formulário de Pesquisa
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div class="project-description">
+
+          <p>
+            Um dos meus primeiros sites voltados a treinar formulários. Mini Projeto via &copy; FreeCodeCamp.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+            </ul>
+          </p>
+          
+        </div>
+      </a>
+      
+      
+      <a
+        href="https://codepen.io/titancodexd/full/jOLbaMq"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/774046803996704768/899458986670186496/unknown.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Site de Tecnologia
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div  class="project-description">
+
+          <p>
+            Site simples simulando uma página de produtos de tecnologia.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </a>
+      
+      
+      <a
+        href="https://codepen.io/titancodexd/full/NWvxpqb"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/774046803996704768/899460021941846087/unknown.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Página de Documentação CSS
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div  class="project-description">
+
+          <p>
+            Mini Projeto de Página de Documentação via &copy; FreeCodeCamp.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        </a> 
+      
+      <a
+        href="https://react-quiz-test-questions.netlify.app"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/720147957760000036/1137517278787809350/image.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Jogo de Quiz
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div  class="project-description">
+
+          <p>
+            Quiz feito com React e context.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+              <li>
+                * Javascript <i class="fab fa-js"></i>
+              </li>
+              <li>
+                * React <i class="fa-brands fa-react"></i>
+              </li>
+            </ul>
+          </p>
+        </div>
+        </a> 
+      
+      <a
+        href="https://weather-cities-react.netlify.app"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/720147957760000036/1143318961761562674/image.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          API de Clima
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div  class="project-description">
+          <p>
+            Site usando API de clima com React.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+              <li>
+                * Javascript <i class="fab fa-js"></i>
+              </li>
+              <li>
+                * React <i class="fa-brands fa-react"></i>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </a> 
+      
+       <a
+        href="https://secret-word-with-react.netlify.app"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/720147957760000036/1147012351665647778/image.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Jogo da Palavra Secreta
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div  class="project-description">
+
+          <p>
+            Jogo de Quiz para adivinhar a palavra secreta.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+              <li>
+                * Javascript <i class="fab fa-js"></i>
+              </li>
+              <li>
+                * React <i class="fa-brands fa-react"></i>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </a> 
+      
+      <a
+        href="https://mini-blog-web.netlify.app"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/720147957760000036/1171334614778920990/image.png?ex=655c4d5e&is=6549d85e&hm=4be9cbb03229d04831245b4554334205f7d0b5436a96b2c8bc64642ecdf08265&"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          MiniBlog
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div  class="project-description">
+
+          <p>
+            Projeto MiniBlog, com registro, login e possibilidades de compartilhar fotos (apenas via link).
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+              <li>
+                * Javascript <i class="fab fa-js"></i>
+              </li>
+              <li>
+                * React <i class="fa-brands fa-react"></i>
+              </li>
+              <li>
+                * Firebase
+              </li>
+            </ul>
+          </p>
+
+        </div>
+  
+        <a
+        href="https://parallel-two.vercel.app"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.discordapp.com/attachments/720147957760000036/1200555197735391322/image.png?ex=65c69b28&is=65b42628&hm=e1b21f9a3c73931131c0ed00b4ae15118a552374cb695ac5bdbd3ca985a61301&"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Parallel
+          <span class="code">&#47;&gt;</span>
+        </p>
+
+        <div class="project-description">
+          <p>
+            Parallel, projeto de um site estilo instagram, onde você tem sua conta, posta foto, comenta, da like, tem seu perfil e etc.
+            <ul>
+              <li>
+                * HTML <i class="fa-brands fa-html5"></i>
+              </li>
+              <li>
+                * CSS <i class="fa-brands fa-css3-alt"></i>
+              </li>
+              <li>
+                * Javascript <i class="fab fa-js"></i>
+              </li>
+              <li>
+                * React <i class="fa-brands fa-react"></i>
+              </li>
+              <li>
+                * Express 
+              </li>
+              <li>
+                * MongoDB Atlas 
+              </li>
+              <li>
+                * Redux 
+              </li>
+              <li>
+                * Amazon AWS S3
+              </li>
+            </ul>
+          </p>
+        </div>
+  
+    </div>
+  
+    <a
+      href="https://codepen.io/your-work/?cursor=ZD0wJm89MSZwPTEmdj01NTg5OTcyOQ=="
+      class="btn btn-show-all"
+      target="_blank"
+      >Ver outros projetos...<i class="fas fa-chevron-right"></i
+    ></a>
+  
+  </section>
+  
+  <!-- Fim dos Projetos -->
+  
+    
+    
+  <!-- Contato -->
+  
+  <section id="contact-pt" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Vamos trabalhar juntos...</h2>
+      <p>Gostaria de entrar em contato? Siga as redes abaixo</p>
+    </div>
+    <div class="contact-links">
+      <a id = "profile-link"
+        href="#"
+        target="_blank"
+        class="btn contact-details contact-success"
+        ><i class="fab fa-facebook-square"></i> Facebook</a
+      >
+      
+      
+      <a
+        id="profile-link"
+        href="https://github.com/titancodexd"
+        target="_blank"
+        class="btn contact-details contact-success"
+        ><i class="fab fa-github"></i> GitHub</a
+      >
+      
+      <a
+        href="https://www.linkedin.com/in/wesley-santos-04aa50122/"
+        target="_blank"
+        class="btn contact-details contact-success"
+        ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+      >
+      
+  
+  
+      <a
+        href="https://twitter.com/Wesley_Beatz"
+        target="_blank"
+        class="btn contact-details contact-success"
+        ><i class="fa-brands fa-x-twitter"></i> Twitter</a
+      >
+      
+      
+      <a href="mailto:wesleysantos32892653@outlook.com" class="btn contact-details contact-success"
+        ><i class="fas fa-at"></i> Envie um E-mail</a
+      >
+      
+      
+      <a href="tel:XXX" class="btn contact-details contact-fail"
+        ><i class="fas fa-mobile-alt"></i> Me ligue</a
+      >
+    </div>
+  </section>
+  
+  <!-- Fim do Contato -->
+  
+    
+    
+  <!-- Rodapé -->
+  
+  <footer>
+    <p>
+      **Todos projetos foram feitos com foco no estudo, nenhum de forma profissional.
+    </p>
+    
+    
+    <p>
+      &copy; Criado por
+      <a class = "contact-success"href="https://www.freecodecamp.org/portuguese/fcc8295c107-265e-4f4a-a37f-def91502a61b" target="_blank"
+         ><strong>Wesley Roberto dos Santos <i class="fas fa-user-alt"></i> .</strong></a>
+    </p>
+  </footer>
+</div>
+
     </body>
+    </html>
   <html>
 
 <!-- Fim do rodapé -->
