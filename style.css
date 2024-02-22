@@ -432,6 +432,12 @@ box-shadow: 0px 0px 17px 19px rgba(0,0,0,0.36);
   footer i {
     vertical-align: middle;
   }
+
+  .curriculo > a{
+    margin-top: 1vh;
+    color: rgb(64, 168, 73);
+  }
+
   
   @media (max-width: 28.75em) {
     footer {
