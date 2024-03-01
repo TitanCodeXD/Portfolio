@@ -28,16 +28,17 @@
 //     });
 // }
 
-
-
-
-
 // Função para trocar linguagem da página
 function toggleLanguage() {
-    const isEnglish = document.documentElement.lang === 'en';
+    const isEnglish =
+        document.documentElement.lang === 'en';
 
-    const contentEN = document.querySelector('.content-en');
-    const contentPT = document.querySelector('.content-pt');
+    const contentEN = document.querySelector(
+        '.content-en'
+    );
+    const contentPT = document.querySelector(
+        '.content-pt'
+    );
 
     if (isEnglish) {
         toggleContent(contentPT, contentEN);
