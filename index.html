@@ -39,9 +39,9 @@
     <div class="content content-en">
 <nav id="navbar" class="nav">
   <ul class="nav-list">
-    <li>
-      <button id="language-toggle" onclick="toggleLanguage()"><i class="fa fa-globe fa-lg"></i> Toggle Language</button>
-    </li>
+      <li>
+        <button id="language-toggle" onclick="toggleLanguage()"><i class="fa-solid fa-globe"></i> Toggle Language</button>
+      </li>
     <li>
       <a href="#welcome-section"><i class="fas fa-user-alt"></i> About</a>
     </li>
@@ -65,8 +65,8 @@
 <section id="welcome-section" class="welcome-section">
   <img src = "./img/Foto Perfil Girada.jpg" alt = "Profile Pic"/> 
   <h1>Hi, I'm Wesley</h1>
-  <p>A Computer Engineering Student</p>
-  
+  <h3>A Computer Engineering Student</h3>
+  <p>I'm 23 years old and I'm focussed on programming, looking for my first opportunity to develop further. I have skills in HTML, CSS, JavaScript and libraries such as React, with an intermediate level of English. My goal is to become a full stack developer, strengthening both my back-end and front-end skills. I consider myself to be an energetic person who is committed to constantly learning, and I see the world of programming as a stimulating challenge. In three words, I describe myself as hard-working, optimistic and communicative.</p>
   <div class="arrow"></div>
 </section>
     
@@ -251,24 +251,37 @@
       </div>
     </a>
 
-    <a
+    <div class="project project-tile">
+      
+      <a
       href="https://to-dotypescript.netlify.app"
       target="_blank"
       class="project project-tile"
-    >
+      >
       <img
         class="project-image"
         src="./img/Capa to do.png"
         alt="project"
       />
+      
+      <div class="project-git">
+        <a
+        id="profile-link"
+        href="https://github.com/TitanCodeXD/Weather_React"
+        target="_blank"
+        class="btn"
+        ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
+      
       <p class="project-title">
         <span class="code">&lt;</span>
         To do List
         <span class="code">&#47;&gt;</span>
       </p>
-
+      
       <div  class="project-description">
-
+        
         <p>
           One of my first Typescript projects, a To do list.
           <ul>
@@ -291,25 +304,83 @@
         </p>
       </div>
     </a>
+</div>
 
-    </a> 
-    
+
+<div class="project project-tile">
+      
+  <a
+  href="https://dashboard-python-crimes-us1960-2014.streamlit.app"
+  target="_blank"
+  class="project project-tile"
+  >
+  <img
+    class="project-image"
+    src="./img/Dashboard Crimes.png"
+    alt="project"
+  />
+  
+  <div class="project-git">
     <a
+    id="profile-link"
+    href="https://github.com/TitanCodeXD/Dashboard_Python_Crimes_US_1960-2014"
+    target="_blank"
+    class="btn"
+    ><i class="fab fa-github"></i> GitHub</a
+    >
+  </div>
+  
+  <p class="project-title">
+    <span class="code">&lt;</span>
+    Dashboard Crimes US 1960 - 2014
+    <span class="code">&#47;&gt;</span>
+  </p>
+  
+  <div  class="project-description">
+    
+    <p>
+      A dashboard application made in python using the Streamlit library to make it dynamic. The study was carried out using a database of crimes in the United States between 1960 and 2014.
+      <ul>
+        <li>
+          * Python <i class="fa-brands fa-python"></i>
+        </li>
+        <li>
+          * Streamlit <i class="fa-brands fa-python"></i>
+        </li>
+      </ul>
+    </p>
+  </div>
+</a>
+</div>
+  
+
+    <div class="project project-tile">
+      <a
       href="https://react-quiz-test-questions.netlify.app"
       target="_blank"
       class="project project-tile"
-    >
+      >
       <img
-        class="project-image"
-        src="./img/Quiz-Game.png"
-        alt="project"
+      class="project-image"
+      src="./img/Quiz-Game.png"
+      alt="project"
       />
+
+      <div class="project-git">
+        <a
+        id="profile-link"
+        href="https://github.com/TitanCodeXD/Quiz_With_React"
+        target="_blank"
+        class="btn"
+        ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
       <p class="project-title">
         <span class="code">&lt;</span>
         Quiz Game with REACT
         <span class="code">&#47;&gt;</span>
       </p>
-
+      
       <div  class="project-description">
 
         <p>
@@ -331,23 +402,38 @@
         </p>
       </div>
     </a> 
+  </div>
+
     
-    <a
+    <div class="project project-tile">
+      
+      <a
       href="https://weather-cities-react.netlify.app"
       target="_blank"
       class="project project-tile"
-    >
+      >
       <img
-        class="project-image"
+      class="project-image"
         src="./img/Clima.png"
         alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Using Weather API with REACT
+        />
+        
+        <div class="project-git">
+          <a
+          id="profile-link"
+          href="https://github.com/TitanCodeXD/Weather_React"
+          target="_blank"
+          class="btn"
+          ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+        
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Using Weather API with REACT
         <span class="code">&#47;&gt;</span>
       </p>
-
+      
       <div  class="project-description">
         <p>
           Website using weather API with React.
@@ -371,25 +457,39 @@
         </p>
       </div>
     </a> 
+  </div>
     
-     <a
+    <div class="project project-tile">
+
+      <a
       href="https://secret-word-with-react.netlify.app"
       target="_blank"
       class="project project-tile"
-    >
+      >
       <img
-        class="project-image"
-        src="./img/Secret-Word.png"
-        alt="project"
+      class="project-image"
+      src="./img/Secret-Word.png"
+      alt="project"
       />
+      
+      <div class="project-git">
+        <a
+        id="profile-link"
+        href="https://github.com/TitanCodeXD/Secret-Word"
+        target="_blank"
+        class="btn"
+        ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
+      
       <p class="project-title">
         <span class="code">&lt;</span>
         Secret Word Game with React
         <span class="code">&#47;&gt;</span>
       </p>
-
+      
       <div  class="project-description">
-
+        
         <p>
           Quiz game to guess the secret word.
           <ul>
@@ -409,25 +509,39 @@
         </p>
       </div>
     </a> 
+  </div>
     
+
+  <div class="project project-tile">
     <a
-      href="https://mini-blog-web.netlify.app"
-      target="_blank"
-      class="project project-tile"
+    href="https://mini-blog-web.netlify.app"
+    target="_blank"
+    class="project project-tile"
     >
-      <img
-        class="project-image"
-        src="./img/MiniBlog.png"
+    <img
+    class="project-image"
+    src="./img/MiniBlog.png"
         alt="project"
-      />
+        />
+
+        <div class="project-git">
+          <a
+          id="profile-link"
+          href="https://github.com/TitanCodeXD/Mini-Blog"
+          target="_blank"
+          class="btn"
+          ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+
       <p class="project-title">
         <span class="code">&lt;</span>
         MiniBlog - React and Firebase
         <span class="code">&#47;&gt;</span>
       </p>
-
+      
       <div  class="project-description">
-
+        
         <p>
           MiniBlog project, with registration, login and the possibility of sharing photos (only via link).
           <ul>
@@ -450,23 +564,40 @@
         </p>
 
       </div>
-
-
-      <a
-      href="https://parallel-two.vercel.app"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
+    </div>
+      
+      
+      <div class="project project-tile">
+        
+        <a
+        href="https://parallel-two.vercel.app"
+        target="_blank"
+        class="project project-tile display:block"
+        >
+        
+        <img
         class="project-image"
         src="./img/ParallelCapa.png"
         alt="project"
-      />
-      <p class="project-title">
+        />
+        
+        <div class="project-git">
+          <a
+          id="profile-link"
+          href="https://github.com/TitanCodeXD/Parallel"
+          target="_blank"
+          class="btn"
+          ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+        
+        <p class="project-title">
         <span class="code">&lt;</span>
-        Parallel
+        Parallel 
         <span class="code">&#47;&gt;</span>
+        
       </p>
+
       <div class="project-description">
         <p>
           Parallel, a project for an instagram-style website, where you have your account, post photos, comment, like, have your profile and so on.
@@ -499,18 +630,69 @@
         </p>
       </div>
 
+    </div>
   </div>
 
-  <a
-    href="https://codepen.io/your-work/?cursor=ZD0wJm89MSZwPTEmdj01NTg5OTcyOQ=="
+    <a
+    href="https://github.com/titancodexd"
     class="btn btn-show-all"
     target="_blank"
     >Show other projects...<i class="fas fa-chevron-right"></i
-  ></a>
+      ></a>
+      
+<!-- Skills
+  <h2 class="skills-section-header">Skills</h2>
+  <div class="skills-containers">
+      <div class="skill-container">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>
+          <p>Trabalho em Equipe</p>
+        </li>
+        <li>
+          <p>Comunicativo</p>
+        </li>
+        <li>
+          <p>Organização</p>
+        </li>
+        <li>
+          <p>Empatia</p>
+        </li>
+        <li>
+          <p>Colaboração</p>
+        </li>
+        <li>
+          <p>Positivade</p>
+        </li>
+      </ul>
+    </div>
+    <div class="skill-container">
+      <h3>Hard Skills</h3>
+      <ul>
+        <li>
+          <p>HTML</p>
+        </li>
+        <li>
+          <p>CSS</p>
+        </li>
+        <li>
+          <p>Javascript</p>
+        </li>
+        <li>
+          <p>React</p>
+        </li>
+        <li>
+          <p>Typescript (Estudando...)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+-->
+ </section>
 
-</section>
 
 <!-- Fim dos Projetos -->
+
 
   
   
@@ -565,10 +747,10 @@
     >
 
     <div class="curriculo">
-      <a href="https://drive.google.com/file/d/13IFDzyF16tZc7g8gek2myLqsylDfMIt6/view?usp=sharing" target="_blank" class="btn contact-details"
+      <a href="https://drive.google.com/file/d/1I3ZLRQRSmMJ0md1y7fWQBZjahyoJtJC3/view?usp=sharing" target="_blank" class="btn contact-details"
       ><i class="fa-solid fa-paperclip"></i> Curriculum PT</a>
       
-      <a href="https://drive.google.com/file/d/1Q-xZrXjSMbD9D5L3RiLADUL08dQ6GHsu/view?usp=sharing" target="_blank" class="btn contact-details"
+      <a href="https://drive.google.com/file/d/17fQwRv_2Xv3aYQboVJ2Yt8t-PefkOZuh/view?usp=sharing" target="_blank" class="btn contact-details"
       ><i class="fa-solid fa-paperclip"></i> Curriculum EN</a>
     </div>
 
@@ -630,7 +812,7 @@
   <nav id="navbar" class="nav">
     <ul class="nav-list">
       <li>
-        <button id="language-toggle" onclick="toggleLanguage()"><i class="fa fa-globe"></i> Trocar Linguagem</button>
+        <button id="language-toggle" onclick="toggleLanguage()"><i class="fa-solid fa-globe"></i> Trocar Linguagem</button>
       </li>
       <li>
         <a href="#welcome-section-pt"><i class="fas fa-user-alt"></i> Sobre</a>
@@ -655,7 +837,8 @@
   <section id="welcome-section-pt" class="welcome-section">
     <img src = "./img/Foto Perfil Girada.jpg" alt = "Foto Perfil"/> 
     <h1>Oi, sou Wesley</h1>
-    <p>Estudante de Engenharia da Computação</p>
+    <h3>Estudante de Engenharia da Computação</h3>
+    <p>Tenho 23 anos e estou focado na área de programação, buscando minha primeira oportunidade para evoluir ainda mais. Possuo habilidades em HTML, CSS, JavaScript e bibliotecas como React, com um nível intermediário de inglês. Meu objetivo é me tornar um desenvolvedor full stack, fortalecendo tanto minhas habilidades no back-end quanto no front-end. Me considero uma pessoa energética e comprometida em aprender constantemente, considerando o mundo da programação como um desafio estimulante. Em três palavras, me descrevo como esforçado, otimista e comunicativo.</p>
     
     <div class="arrow"></div>
   </section>
@@ -842,16 +1025,26 @@
       </div>
     </a>
 
-    <a
+    <div class="project project-tile">
+      <a
       href="https://to-dotypescript.netlify.app"
       target="_blank"
       class="project project-tile"
-    >
+      >
       <img
-        class="project-image"
-        src="./img/Capa to do.png"
-        alt="project"
+      class="project-image"
+      src="./img/Capa to do.png"
+      alt="project"
       />
+      <div class="project-git">
+        <a
+        id="profile-link"
+        href="https://github.com/TitanCodeXD/To-do-List--Typescript"
+        target="_blank"
+        class="btn"
+        ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
       <p class="project-title">
         <span class="code">&lt;</span>
         Lista de Afazeres
@@ -882,25 +1075,82 @@
         </p>
       </div>
     </a>
+  </div>
+
+  <div class="project project-tile">
       
+    <a
+    href="https://dashboard-python-crimes-us1960-2014.streamlit.app"
+    target="_blank"
+    class="project project-tile"
+    >
+    <img
+      class="project-image"
+      src="./img/Dashboard Crimes.png"
+      alt="project"
+    />
+    
+    <div class="project-git">
       <a
-        href="https://react-quiz-test-questions.netlify.app"
-        target="_blank"
-        class="project project-tile"
+      id="profile-link"
+      href="https://github.com/TitanCodeXD/Dashboard_Python_Crimes_US_1960-2014"
+      target="_blank"
+      class="btn"
+      ><i class="fab fa-github"></i> GitHub</a
+      >
+    </div>
+    
+    <p class="project-title">
+      <span class="code">&lt;</span>
+      Dashboard Crimes US 1960 - 2014
+      <span class="code">&#47;&gt;</span>
+    </p>
+    
+    <div  class="project-description">
+      
+      <p>
+        Uma aplicação dashboard feita em python usando a biblioteca Streamlit para deixar dinâmico. O estudo foi feito usando uma base de dados de crimes nos Estados Unidos estre 1960 - 2014.
+        <ul>
+          <li>
+            * Python <i class="fa-brands fa-python"></i>
+          </li>
+          <li>
+            * Streamlit <i class="fa-brands fa-python"></i>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </a>
+  </div>
+    
+    <div class="project project-tile">
+      <a
+      href="https://react-quiz-test-questions.netlify.app"
+      target="_blank"
+      class="project project-tile"
       >
         <img
           class="project-image"
           src="./img/Quiz-Game.png"
           alt="project"
-        />
-        <p class="project-title">
+          />
+          <div class="project-git">
+            <a
+            id="profile-link"
+            href="https://github.com/TitanCodeXD/Quiz_With_React"
+            target="_blank"
+            class="btn"
+            ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+          <p class="project-title">
           <span class="code">&lt;</span>
           Jogo de Quiz
           <span class="code">&#47;&gt;</span>
         </p>
-
+        
         <div  class="project-description">
-
+          
           <p>
             Quiz feito com React e context.
             <ul>
@@ -919,24 +1169,37 @@
             </ul>
           </p>
         </div>
-        </a> 
+      </a> 
+    </div>
       
-      <a
+
+
+      <div class="project project-tile">
+        <a
         href="https://weather-cities-react.netlify.app"
         target="_blank"
         class="project project-tile"
-      >
+        >
         <img
-          class="project-image"
-          src="./img/Clima.png"
-          alt="project"
+        class="project-image"
+        src="./img/Clima.png"
+        alt="project"
         />
+        <div class="project-git">
+          <a
+          id="profile-link"
+          href="https://github.com/TitanCodeXD/Weather_React"
+          target="_blank"
+          class="btn"
+          ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
         <p class="project-title">
           <span class="code">&lt;</span>
           API de Clima
           <span class="code">&#47;&gt;</span>
         </p>
-
+        
         <div  class="project-description">
           <p>
             Site usando API de clima com React.
@@ -957,23 +1220,35 @@
           </p>
         </div>
       </a> 
+    </div>
       
-       <a
+      
+      <div class="project project-tile">
+        <a
         href="https://secret-word-with-react.netlify.app"
         target="_blank"
         class="project project-tile"
-      >
+        >
         <img
           class="project-image"
           src="./img/Secret-Word.png"
           alt="project"
         />
-        <p class="project-title">
+        <div class="project-git">
+          <a
+          id="profile-link"
+          href="https://github.com/TitanCodeXD/Secret-Word"
+          target="_blank"
+          class="btn"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
+      <p class="project-title">
           <span class="code">&lt;</span>
           Jogo da Palavra Secreta
           <span class="code">&#47;&gt;</span>
         </p>
-
+        
         <div  class="project-description">
 
           <p>
@@ -995,17 +1270,30 @@
           </p>
         </div>
       </a> 
+    </div>
       
-      <a
+      <div class="project project-tile">
+
+        
+        <a
         href="https://mini-blog-web.netlify.app"
         target="_blank"
         class="project project-tile"
-      >
+        >
         <img
           class="project-image"
           src="./img/MiniBlog.png"
           alt="project"
-        />
+          />
+          <div class="project-git">
+            <a
+            id="profile-link"
+            href="https://github.com/TitanCodeXD/Mini-Blog"
+            target="_blank"
+          class="btn"
+          ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
         <p class="project-title">
           <span class="code">&lt;</span>
           MiniBlog
@@ -1013,7 +1301,7 @@
         </p>
 
         <div  class="project-description">
-
+          
           <p>
             Projeto MiniBlog, com registro, login e possibilidades de compartilhar fotos (apenas via link).
             <ul>
@@ -1034,19 +1322,33 @@
               </li>
             </ul>
           </p>
-
         </div>
-  
-        <a
-        href="https://parallel-two.vercel.app"
-        target="_blank"
-        class="project project-tile"
-      >
-        <img
+      </div>
+        
+        
+        <div class="project project-tile">
+          
+          <a
+          href="https://parallel-two.vercel.app"
+          target="_blank"
+          class="project project-tile"
+          >
+          <img
           class="project-image"
           src="./img/ParallelCapa.png"
           alt="project"
-        />
+          />
+          
+          <div class="project-git">
+            <a
+            id="profile-link"
+            href="https://github.com/TitanCodeXD/Parallel"
+            target="_blank"
+            class="btn"
+            ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+
         <p class="project-title">
           <span class="code">&lt;</span>
           Parallel
@@ -1055,7 +1357,7 @@
 
         <div class="project-description">
           <p>
-            Parallel, projeto de um site estilo instagram, onde você tem sua conta, posta foto, comenta, da like, tem seu perfil e etc.
+            Parallel, projeto de um site estilo instagram, onde você tem sua conta, posta foto, comenta, da like, tem seu perfil e etc. 
             <ul>
               <li>
                 * HTML <i class="fa-brands fa-html5"></i>
@@ -1084,11 +1386,11 @@
             </ul>
           </p>
         </div>
-  
-    </div>
-  
+      </div>
+      </div>
+      
     <a
-      href="https://codepen.io/your-work/?cursor=ZD0wJm89MSZwPTEmdj01NTg5OTcyOQ=="
+      href="https://github.com/titancodexd"
       class="btn btn-show-all"
       target="_blank"
       >Ver outros projetos...<i class="fas fa-chevron-right"></i
@@ -1121,7 +1423,7 @@
         href="https://github.com/titancodexd"
         target="_blank"
         class="btn contact-details contact-success"
-        ><i class="fab fa-github"></i> GitHub</a
+        ><i class="fab fa-github"> </i> GitHub</a
       >
       
       <a
@@ -1151,10 +1453,10 @@
     >
 
     <div class="curriculo">
-      <a href="https://drive.google.com/file/d/13IFDzyF16tZc7g8gek2myLqsylDfMIt6/view?usp=sharing" target="_blank" class="btn contact-details"
+      <a href="https://drive.google.com/file/d/1I3ZLRQRSmMJ0md1y7fWQBZjahyoJtJC3/view?usp=sharing" target="_blank" class="btn contact-details"
       ><i class="fa-solid fa-paperclip"></i> Currículo PT</a>
       
-      <a href="https://drive.google.com/file/d/1Q-xZrXjSMbD9D5L3RiLADUL08dQ6GHsu/view?usp=sharing" target="_blank" class="btn contact-details"
+      <a href="https://drive.google.com/file/d/17fQwRv_2Xv3aYQboVJ2Yt8t-PefkOZuh/view?usp=sharing" target="_blank" class="btn contact-details"
       ><i class="fa-solid fa-paperclip"></i> Currículo EN</a>
     </div>
     </div>
