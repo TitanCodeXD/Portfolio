@@ -497,6 +497,16 @@ button:hover {
     }
 }
 */
+.project-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
 
 .project-git {
     background-color: #1f1f1f;
