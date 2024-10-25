@@ -58,11 +58,13 @@ html {
 /* Estilo Base do site, Body */
 
 body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
+    overflow-x: hidden;
 }
 
 h1,
@@ -267,6 +269,40 @@ button:hover {
 
 /* Projetos */
 
+@keyframes slide-in-anim {
+    20% {
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(5%);
+    }
+    75% {
+        transform: translateX(7%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(6%);
+    }
+}
+
+.subtitle {
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    opacity: 0;
+}
+
+.subtitle.visible {
+    animation: slide-in-anim 1.5s ease-out forwards;
+    opacity: 1;
+}
+
+.text-subtitle {
+    font-size: 1em;
+    text-align: left;
+    margin-left: 4em;
+}
+
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
@@ -296,6 +332,26 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projects-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projects-grid3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
@@ -309,6 +365,10 @@ button:hover {
     .projects-grid {
         grid-template-columns: 1fr;
         overflow: hidden;
+    }
+
+    .subtitle {
+        margin-left: 0px;
     }
 }
 
@@ -363,6 +423,28 @@ button:hover {
     .project-title {
         font-size: 0.5em;
         padding: 40px 30px;
+    }
+
+    .subtitle {
+        margin: 0;
+    }
+
+    .subtitle.visible {
+        opacity: 0;
+    }
+
+    .text-subtitle {
+        font-size: 0.5em;
+    }
+
+    .projects-grid2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-gap: 2rem;
+        width: 100%;
+        max-width: 1680px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
     }
 }
 

@@ -30,15 +30,10 @@
 
 // Função para trocar linguagem da página
 function toggleLanguage() {
-    const isEnglish =
-        document.documentElement.lang === 'en';
+    const isEnglish = document.documentElement.lang === 'en';
 
-    const contentEN = document.querySelector(
-        '.content-en'
-    );
-    const contentPT = document.querySelector(
-        '.content-pt'
-    );
+    const contentEN = document.querySelector('.content-en');
+    const contentPT = document.querySelector('.content-pt');
 
     if (isEnglish) {
         toggleContent(contentPT, contentEN);
@@ -53,3 +48,33 @@ function toggleContent(toShow, toHide) {
     toShow.classList.remove('hidden');
     toHide.classList.add('hidden');
 }
+
+//Função para texto deslizando
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecionando cada subtitle
+    const subtitles = document.querySelectorAll('.subtitle');
+
+    // Função de callback para o IntersectionObserver
+    const handleIntersection = (entries, observer) => {
+        entries.forEach((entry) => {
+            console.log(`Is intersecting: ${entry.isIntersecting}`);
+            if (entry.isIntersecting) {
+                // Dispara a animação ao entrar na viewport
+                entry.target.classList.add('visible');
+                console.log('Class "visible" added');
+                observer.unobserve(entry.target); // Desconecta o observador para esse elemento
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1, // Quando 10% do subtítulo for visível, a animação será disparada
+    });
+
+    // Observa cada subtítulo
+    subtitles.forEach((subtitle) => {
+        observer.observe(subtitle);
+    });
+});
