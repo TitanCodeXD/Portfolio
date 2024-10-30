@@ -65,6 +65,7 @@ body {
     line-height: 1.4;
     color: var(--main-white);
     overflow-x: hidden;
+    width: 100%;
 }
 
 h1,
@@ -419,7 +420,50 @@ button:hover {
     padding: 20px 15px;
 }
 
+@media (max-width: 1600px) {
+    @keyframes slide-in-anim2 {
+        20% {
+            opacity: 0;
+        }
+        60% {
+            transform: translateX(2%);
+        }
+        75% {
+            transform: translateX(4%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+    .subtitle {
+        margin: 0;
+    }
+
+    .subtitle.visible {
+        animation: slide-in-anim2 1.5s ease-out forwards;
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1250px) {
+    @keyframes slide-in-anim2 {
+        20% {
+            opacity: 0;
+        }
+        60% {
+            transform: translateX(2%);
+        }
+        75% {
+            transform: translateX(4%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
     .project-title {
         font-size: 0.5em;
         padding: 40px 30px;
@@ -430,7 +474,8 @@ button:hover {
     }
 
     .subtitle.visible {
-        opacity: 0;
+        animation: slide-in-anim2 1.5s ease-out forwards;
+        opacity: 1;
     }
 
     .text-subtitle {
@@ -445,6 +490,10 @@ button:hover {
         max-width: 1680px;
         margin: 0 auto;
         margin-bottom: 6rem;
+    }
+
+    body {
+        max-width: 100%;
     }
 }
 
