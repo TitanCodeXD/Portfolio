@@ -172,6 +172,7 @@ button:hover {
 /* Welcome section */
 
 .welcome-section {
+    /*position: relative;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,7 +343,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
@@ -363,6 +364,16 @@ button:hover {
     grid-gap: 2rem;
     width: 100%;
     max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projects-grid4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
