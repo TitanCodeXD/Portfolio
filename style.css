@@ -145,7 +145,7 @@ button:hover {
 
 .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 0;
     align-items: center;
 }
 
@@ -467,7 +467,7 @@ button:hover {
     }
 }
 
-@media (max-width: 1250px) {
+@media (min-width: 400px) and (max-width: 1250px) {
     @keyframes slide-in-anim2 {
         20% {
             opacity: 0;
@@ -514,6 +514,32 @@ button:hover {
 
     body {
         max-width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .project-title {
+        font-size: 1em;
+        padding: 20px 30px;
+    }
+
+    .text-subtitle {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    .welcome-section > p {
+        line-height: 40px;
+        align-items: center;
+        text-align: justify;
+        justify-content: center;
+        margin-top: 150px;
+        max-width: 110vh;
+        font-size: 2.5rem;
+        font-weight: 200;
+        font-style: italic;
+        color: var(--main-white);
     }
 }
 
